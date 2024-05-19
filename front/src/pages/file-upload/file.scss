@@ -1,0 +1,162 @@
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.display-grid{
+    display: grid;
+}
+
+.file-upload-body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(270deg, #ffe6c4, #fdaf9a, #d8a860);
+    background-size: 600% 600%;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+.file-upload-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .progress-bar {
+    width: 0%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    transition: width 1s ease;
+  }
+
+ //header
+
+ /* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3e5f5;
+}
+
+header {
+    background-color: #f8bbd0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.refresh-file-icon{
+  float: right;
+  margin-top: -8%;
+  margin-right: -5%;
+  cursor: pointer;
+}
+
+.menu a, .login-button {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.sign-up {
+    background-color: #ec407a;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.upload-area {
+    margin: 20px auto;
+    padding: 30px;
+    border: dashed 2px #ccc;
+    border-radius: 10px;
+    background-color: #e1f5fe;
+    display: inline-block;
+}
+
+footer {
+    background-color: #fce4ec;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+//logout remove
+
+.logout-button {
+    position: absolute; /* Positioning it at the top-right corner */
+    top: 10px;
+    right: 10px;
+    background-color: #ff4081; /* Interactive color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #f50057; /* Slightly darker on hover */
+  }
+  
+  .logout-icon {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logout-button:hover .logout-icon {
+    transform: rotate(360deg); /* Rotate icon on hover */
+  }
+  
